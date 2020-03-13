@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src='assets/js/main.js' defer></script>
         <title>Weather App</title>
     </head>
@@ -19,18 +19,16 @@
                         <h4 class="card-title">Search History</h4>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form id='search'>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input id='input_search' name='input_search' type="text" class="form-control" placeholder="Search">
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">&#128269;</button>
+                                    <button class="btn btn-outline-secondary" type="submit">&#128269;</button>
                                 </div>
                             </div>
                         </form>
                         <div>
-                            <ul
-                                class="list-group" id='searchHistory'><!-- <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a> -->
-                            </ul>
+                            <ul class="list-group" id='searchHistory'></ul>
                         </div>
                     </div>
                 </div>
