@@ -1,0 +1,17 @@
+body {
+    background-color: whitesmoke;
+    padding-top: 10px;
+}
+
+.jumbotron {
+    background-color: steelblue;
+}
+
+.card {
+    padding: 10px;
+}
+
+.u_fiveday_forecast .card {
+    margin: 5px;
+}
+  

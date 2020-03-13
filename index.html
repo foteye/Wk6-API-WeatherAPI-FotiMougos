@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src='assets/js/main.js' defer></script>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <header class='container'>
+            <h1 class='jumbotron text-center'>Weather Dashboard</h1>
+        </header>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-4 u_search_box card'>
+                    <div>
+                        <h4 class="card-title">Search History</h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">&#128269;</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div>
+                            <ul
+                                class="list-group" id='searchHistory'><!-- <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-8 u_weather_report card'>
+                    <div>
+                        <h4 class="card-title">Today's Forecast</h4>
+                    </div>
+                    <div class='u_todays_forecast'>
+                        <h5>
+                            <span id='city_name'></span>
+                            <span id='todays_date'></span>
+                            <span id='weather_icon'></span>
+                        </h5>
+                        <p>Temperature:<span id='temperature'></span>
+                        </p>
+                        <p>Humidity:<span id='humidity'></span>
+                        </p>
+                        <p>Windspeed:<span id='windspeed'></span>
+                        </p>
+                        <p>UV Index:<span id='uv_index'></span>
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="card-title">Five Day Forecast</h4>
+                    </div>
+                    <div class='u_fiveday_forecast container'>
+                        <div class='row'>
+                            <div class='card bg-primary col-2'>
+                                <h5 class="card-title" id='date1'>Date1</h5>
+                            </div>
+                            <div class='card bg-primary col-2'>
+                                <h5 class="card-title" id='date2'>Date2</h5>
+                            </div>
+                            <div class='card bg-primary col-2'>
+                                <h5 class="card-title" id='date3'>Date3</h5>
+                            </div>
+                            <div class='card bg-primary col-2'>
+                                <h5 class="card-title" id='date4'>Date4</h5>
+                            </div>
+                            <div class='card bg-primary col-2'>
+                                <h5 class="card-title" id='date5'>Date5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
